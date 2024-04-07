@@ -38,7 +38,7 @@ services:
   puppeteer:
     image: ghcr.io/rohit267/puppeteer
     volumes:
-      - ./script.js:/app/script.js
-  cap_add:
-    - SYS_ADMIN
+      - /home/homeserver/currentDocker/script.js:/app/script.js
+    cap_add:
+      - SYS_ADMIN
 ```
